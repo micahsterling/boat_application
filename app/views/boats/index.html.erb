@@ -1,9 +1,8 @@
 <h1>This is the index</h1>
 
 <% @boats.each do |boat| %>
-<p><%= boat.title %></p>
-<p><%= boat.capacity  %></p>
-<p><%= boat.color  %></p>
-<p><%= boat.price  %></p>
+<p>Title: <a href="/boats/<%= boat.id%>"><%= boat.title %></p>
+<p>Capacity: <%= boat.capacity %></p>
+
 <hr>
 <% end %>
